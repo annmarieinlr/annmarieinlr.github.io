@@ -14,7 +14,7 @@
 <main>
 	<label for="select-weather">What's the Weather?</label>
 <br/>
-<select name="weather" id="select-weather">
+<select onchange="pickShoes()" name="weather" id="select-weather">
     <option value="">--Please choose an option--</option>
     <option value="hot">Hot</option>
     <option value="rain">Rain</option>
@@ -22,7 +22,7 @@
     <option value="unknown">Unknown</option>
     </select>
     <br/>
-    <label><button type="button" onclick="pickShoes()">Footwear</button></label>
+   
 	<hr>
     <p><span id="output"></span></p>
 <script src="js/footwear.js"></script>    
