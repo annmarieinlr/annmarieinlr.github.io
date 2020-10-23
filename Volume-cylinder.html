@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Tax Pay</title>
+   
+</head>
+<header>
+	<h1>Volume of a Cylinder</h1>
+	<h2>Annmarie Worthington</h2>
+</header>
+<main>
+    <h3>Volume of a Cylinder</h3>
+    <label>Enter the radius: <input type="text" id="radius"></label>
+    <label>Enter the height: <input type="text" id="height"></label>
+      <label><button type="button" onclick="calculateVolume()">Find Volume</button></label>
+    <p><span id='output'></span></p>
+    <script>
+        function calculateVolume() {
+    //Input:
+    // Get radius
+    let r = parseFloat(document.getElementById('radius').value);
+    // Get height
+    let h = parseFloat(document.getElementById('height').value);        
+    
+    //Processing:
+    //Calculate Volume
+    let vol= Math.PI * r * h * h;
+    //Round to the nearest tenth
+    let digits = 0;
+    let multiplier = Math.pow(10, digits);
+    Volume= Math.round(vol * multiplier) / multiplier;
+    
+    //Output: Show number of kilograms
+    document.getElementById('output').innerHTML = "Volume: " + Volume;
+}
+</script>
+</main>
+<footer>
+	&copy;2020 &bull; Annmarie Worthington &bull; BYU-Idaho &bull; CIT 160
+</footer>

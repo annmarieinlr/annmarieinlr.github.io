@@ -19,7 +19,7 @@ h2 {
 }
 
 h2, #currentdate {
-	color: yellow;
+	color: black;
 }
 
 main {
@@ -27,7 +27,7 @@ main {
 	border: 1px solid #999;
 	padding: 10px;
 	max-width: 500px;
-	background-color: #abe;
+	background-color: #e4c5eb;
 	box-shadow: 0 0 30px;
 }
 
@@ -38,8 +38,34 @@ h3 {
 	padding: 0;
 }
 
+label,
+footer {
+    font-family: sans-serif;
+}
+
 label {
-	display: block;
-	margin: 5px;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+ul {
+	text-align: left;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.output {
+    background: center/cover no-repeat url('/media/cc0-images/hamster.jpg');
+    position: relative;
 }
 

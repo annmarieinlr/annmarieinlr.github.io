@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template-style.css">
+    <title>Calculator</title>
+</head>
+<header>
+	<h1>Week 6: Let's Have Fun with Math!</h1>
+	<h1>Annmarie Worthington</h1>
+</header>
+<main>
+    
+    <h4>Instructions:</h4>
+    <ul>
+        <li>Box 1: Emter your first number</li>
+        <li>Box 2: Pick: add, subtract, multiply, or divide</li>
+        <li>Box 3: Enter your second number</li>
+        <li>Box 4: Enter your answer</li>
+        <li>Click the button to check your answer</li>
+    </ul>
+    <label><input type="text" id="number1" size="2"></label>
+    <select name="operators" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        </select>
+    <label><input type="text" id="number2" size="2"></label>
+    <label> = <input type="text" id="myans" size="2"></label>
+    <label><button type="button" onclick="calculator()">Check your answer</button></label>
+    <p><span id='output'></span></p>
+    <script src="js/calculator.js"></script> 
+</main>
+<footer>
+	&copy;2020 &bull; Annmarie Worthington &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</html>

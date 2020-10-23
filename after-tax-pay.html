@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Tax Pay</title>
+   
+</head>
+<header>
+	<h1>After Tax Pay</h1>
+	<h2>Annmarie Worthington</h2>
+</header>
+<main>
+	<h3>Calculating After Tax Pay</h3>
+    <label>Enter the number of regular hours: <input type="text" id="regular hours"></label>
+    <label>Enter the number of overtime hours: <input type="text" id="overtime hours"></label>
+      <label><button type="button" onclick="calculateNetPay()">Calculate Net Pay</button></label>
+    <p><span id='output'></span></p>
+    <script>
+        function calculateNetPay() {
+    //Input:
+    // Get regular hours
+    let reg = parseFloat(document.getElementById('regular hours').value);
+    // Get overtime hours
+    let overTime = parseFloat(document.getElementById('overtime hours').value);        
+    
+    //Processing:
+    //Calulate Gross Pay 
+    let r= reg * 15;
+    let o= overTime * 22.50;
+    let grossPay = r + o;
+    //Calculate After Tax
+    let tax = grossPay*.15;
+    let netPay = grossPay - tax; 
+    //Round to the nearest cent
+    let digits = 2;
+    let multiplier = Math.pow(10, digits);
+    netPay= Math.round(netPay * multiplier) / multiplier;
+    
+    //Output: Show number of kilograms
+    document.getElementById('output').innerHTML = "Your net pay is $" + netPay
+}
+</script>
+</main>
+<footer>
+	&copy;2020 &bull; Annmarie Worthington &bull; BYU-Idaho &bull; CIT 160
+</footer>
