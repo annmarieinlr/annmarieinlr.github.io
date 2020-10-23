@@ -27,7 +27,7 @@ function calculator() {
     }
 
    
-    //Ooutput:
+    //Output:
     //Check their answer
     document.getElementById('output').innerHTML = 
         if (myans == answer) {
