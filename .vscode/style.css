@@ -17,13 +17,13 @@ html {
   
   
   html {
-    background-color: #1b76df;
+    background-color: #d7dce2;
   }
   
   body {
     width: 600px;
     margin: 0 auto;
-    background-color: #e8e8d3;
+    background-color: #1b76df;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
   }
