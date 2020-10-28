@@ -1,6 +1,7 @@
 html {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
+    background-color: #1b76df;
   }
   
   
@@ -20,9 +21,6 @@ html {
     background-color: #d7dce2;
   }
   
-  div {
-    background-color: #1b76df;
-  }
   
   body {
     width: 600px;
