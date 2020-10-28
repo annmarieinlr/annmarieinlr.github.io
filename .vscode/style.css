@@ -20,6 +20,10 @@ html {
     background-color: #d7dce2;
   }
   
+  div {
+    background-color: #1b76df;
+  }
+  
   body {
     width: 600px;
     margin: 0 auto;
