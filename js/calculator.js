@@ -25,7 +25,7 @@ function calculator() {
         case '-':
             answer = parseFloat(num1 - num2);
             if (myans == answer){
-                message = "Correct! Great Job."
+                message = "Correct! Great Job. 🏆"
             } else {
                 message = "Incorrect, but you can try again."
             }
