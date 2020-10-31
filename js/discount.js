@@ -29,7 +29,7 @@ function total() {
     
     trueTotal = (newsubtotal * 1.06);
   
-    //Output
+//Output
     document.getElementById("output").innerHTML = "Their total is: " + trueTotal.toFixed(2);
 }
 
