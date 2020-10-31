@@ -11,25 +11,25 @@
 //Display Total
 
 //Input
-
-let dayOfWeek = new Date().getDay();
-let sub = parseFloat(document.getElementById("subtotal").value);
-let newsubtotal;
-parseFloat
-let trueTotal;
-
-//Processing
 function total() {
+
+    let dayOfWeek = new Date().getDay();
+    let sub = parseFloat(document.getElementById("subtotal").value);
+    let newsubtotal;
+    let trueTotal;
     
-    if (sub >= 50 && dayOfWeek == 2 || dayOfWeek == 3) {
+//Processing
+
+    
+    if (sub >= 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
         newsubtotal = (sub * .9);
     } else {
         newsubtotal = (sub);
     }
     
-    trueTotal = parseFloat(sub * 1.06);
-
+    trueTotal = (newsubtotal * 1.06);
+  
     //Output
-    document.getElementById('output').innerHTML = trueTotal
+    document.getElementById("output").innerHTML = "Their total is: " + trueTotal.toFixed(2);
 }
 
