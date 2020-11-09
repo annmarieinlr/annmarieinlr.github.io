@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/template-style.css">
+        <title>Five Times Table</title>
+    </head>
+    <header>
+        <h1>Week 9: Five Times Table</h1>
+        <h2>Annmarie Worthington</h2>
+    </header>
+    <main>
+        <p id='times'></p>
+        <script>
+            let i;
+            let text = "";
+            for (i = 1; i<=12; i++) {
+                text += `5 x ${i} = ${5 * i} <br>`;
+            }
+            document.getElementById('times').innerHTML = text;
+        </script>
+    </main>
+</html>
