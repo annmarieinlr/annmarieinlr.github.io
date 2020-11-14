@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/template-style.css">
+        <title>Five Times Table</title>
+    </head>
+    <header>
+        <h1>Test 2: Powers</h1>
+        <h2>Annmarie Worthington</h2>
+    </header>
+    <main>
+        <p id='power'></p>
+        <script>
+            let i;
+            let text = "";
+            for (i = 0; i<=31; i++) {
+                text += `${Math.pow(2, i)}, `;
+            }
+            document.getElementById('power').innerHTML = text;
+
+        </script>
+    </main>
+    <footer>
+        &copy;2020 &bull; Annmarie Worthington &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+</html>
