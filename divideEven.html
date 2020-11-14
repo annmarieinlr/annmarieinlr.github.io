@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+</head>
+<body>
+  <p>Please enter two numbers:</p>
+  <label> Starting Number: <input type="text" id="start" size="5"></label><br>
+  <label> Ending Number: <input type="text" id="end" size="5"></label><br>
+  <label> Divisor: <input type="text" id="divisor" size="5"></label>
+  <button type="button" onclick="evenly()">Click</button>
+  <div id="output"></div>
+
+  <script>
+    /* Input:
+     * Processing:
+     * Output:
+     */
+  function evenly() {
+      let start = parseFloat(document.getElementById('start').value);
+      let end = parseFloat(document.getElementById('end').value);
+      let divisor = parseFloat(document.getElementById('divisor').value);
+      let response ="";
+
+      for (let i=start; i<=end; i++) {
+      if (i % divisor == 0) {
+        response += `${i} `;
+      }   
+    }
+
+        document.getElementById('output').innerHTML = response
+    }
+
+
+  </script>
+</body>
+</html>
