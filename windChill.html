@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Wind Chill</title>
     <body>
-        <label>Temperature: <input type="text" id="temp" size="5"></label><br>
-        <label>Wind Speed: <input type="text" id="windSpeed" size="5"></label><br>
-        <button type="button" onclick="doInputOutput()">Wind Chill</button>
+        <label>Temperature: <input type="text" id="tempF" size="5"></label><br>
+        <p></p>
+        <label>Wind Speed: <input type="text" id="speed" size="5"></label><br>
+        <p></p>
+        <button type="button" onclick="doInputOutput()">Wind Chill</button><br>
+        <p></p>
+        <div id="output"></div>
 
+        <script src="js/windChill.js"></script>
     </body>
+    <footer>
+        <p></p>
+        &copy;2020 &bull; Annmarie Worthington &bull; BYU-Idaho &bull; CIT 160
+    </footer>
 </html>
