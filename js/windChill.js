@@ -1,20 +1,23 @@
 function doInputOutput() {
     let temperature = parseFloat(document.getElementById("tempF").value);
     let windspeed = parseFloat(document.getElementById("speed").value);
+    let message = "";
     
         if (temperature <= 50 && windspeed >=3) {
-            windChill(temperature, windspeed);
+            let windchill = windChill(temperature, windspeed);
+            message = `The Windchill is ${Math.round(windchill)}`;
         }
         else {
-            alert("Windchill is not a factor");
+            message = `Windchill is not a factor.`;
         }
-    
+        
+        document.getElementById('output').innerHTML = message 
 }
 
 //Formula   f = 35.74 + 0.6215 t - 35.75 s0.16 + 0.4275 t s0.16
 
-function windChill(temperature, windspeed) {
-    let windchill = 35.74 + (0.6215 * temperature) - (35.75 * windspeed**0.16) + (0.4275 * temperature
-        * windspeed**0.16)
-    document.getElementById('output').innerHTML = "The Windchill is " + Math.round(windchill)
+function windChill(t, s) {
+    return 35.74 + (0.6215 * t) - (35.75 * s**0.16) + (0.4275 * t* s**0.16);
+  
 }
+
