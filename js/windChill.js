@@ -8,7 +8,7 @@ function doInputOutput() {
             message = `The Windchill is ${Math.round(windchill)}`;
         }
         else {
-            message = `Windchill is not a factor. Enjoy!`;
+            message = `Windchill is not a factor.`;
         }
         
         document.getElementById('output').innerHTML = message 
