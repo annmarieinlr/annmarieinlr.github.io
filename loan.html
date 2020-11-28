@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Loan Calculator</title>
+ <body>
+    <h1>Loan Calculator</h1>
+    <label>Amount Borrowed (Principal) <input type="text" id="principal" size="5"></label><br>
+    <label>Annual Rate <input type="text" id="rate" size="5>"></label><br>
+    <label>Number of Years <input type="text" id="years"></label><br>
+    <label>Payments per Year <input type="text" id="periods"></label><br>
+    <label>Number of Payments Paid to Date <input type="text" id="payments"></label><br>
+    <button type="button" onclick="doPayment()">Compute Payment</button><br>
+    <div id="output1"></div>
+    <p></p>
+    <button type="button" onclick="doBalance()">Compute Payoff Amount</button><br>
+    <div id="output2"></div>
+
+    <script src="js/loan.js"></script>
+ </body>
+
+ <footer>
+   <p></p>
+   &copy;2020 &bull; Annmarie Worthington &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</html>

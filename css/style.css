@@ -7,7 +7,7 @@ html {
   body {
     width: 1200px;
     margin: 0 auto;
-    background-color: #1b76df;
+    background-color: #c0ebbc;
     border: 5px solid black;
     text-align: left;
     padding-left: 500px;
@@ -42,8 +42,14 @@ html {
     font-size: 16px;
     cursor: pointer;
     padding: 15px 32px;
+    margin-bottom: 7px;
   }
   
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
   .footer {
     font-size: 10px;
   }

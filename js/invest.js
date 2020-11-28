@@ -12,8 +12,10 @@ function doFV() {
     let message = "";
     let fV = computeFutureValue(principal, rate, years, periods);
     message = `Your investment will be worth ${fV}`;
-    document.getElementById('output').innerHTML = message 
+//Output of Investment worth
+    document.getElementById('output').innerHTML = message     
 }
+
 
 // (computeFutureValue) computes and returns the future value of an investment.
 //Formula  f = a (1 + r)^n 
